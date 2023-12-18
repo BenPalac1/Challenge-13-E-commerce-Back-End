@@ -10,7 +10,26 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
+    id: {
+
+    },
+
+    product_name: {
+
+    },
+    price: {
+
+    },
+
+    stock: {
+
+    },
+
+    category_id: {
+
+    },
   },
+
   {
     sequelize,
     timestamps: false,
