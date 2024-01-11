@@ -3,9 +3,8 @@ Object-Relational Mapping (ORM) Challenge
 
 ## Description
 
-Internet retail, also known as e-commerce, plays a significant role within the electronics industry, as it empowers businesses and consumers alike to conveniently engage in online buying and selling of electronic products. In the latest available data from 2021, the industry in the United States alone was estimated to have generated the substantial amount of US$2.54 trillion, according to the United Nations Conference on Trade and Development. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to the prevalence of these platforms, developers should understand the fundamental architecture of e-commerce sites.
-
-Your challenge is to build the back end for an e-commerce site. You’ll take a working Express.js API and configure it to use Sequelize to interact with a MySQL database.
+This challenge was to build the back end for an e-commerce site. I was given a working Express.js API and configured it to use Sequelize to interact with a MySQL database.
+Then I tested all of the routes for seeded database in Insomnia.
 
 ## User Story
 
@@ -39,17 +38,41 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 
 THEN I am able to successfully create, update, and delete data in my database
 
-## ScreenShots
 
 ## Video Showing App Functionality
 
+Video showing functioning Routes: GET all, GET one, POST, PUT, and DELETE for Categories, Products, and Tags in Insomnia.  Video does have audio/dialogue.
+https://github.com/BenPalac1/Challenge-13-E-commerce-Back-End/assets/139652929/2134cea9-b6e0-4ba0-b60a-6ca7d58f8356
+
+
 ## Usage Instructions
+
+1.) Clone the repo and open it using VS code.
+
+2.) Open a new terminal in vscode, run an "npm i" to install dependencies, and change the ".env file" to match your credentials.
+
+3.) Navigate to the db folder then access mysql in terminal by typing "mysql -u root -p" when prompted for password,
+    enter your password from your modified .env file.  Then enter "source schema.sql" to source the schema.  
+    Next type "quit"
+    
+4.) Back in the main folder, run "npm run seed" to seed the database and the "npm run watch" to get it started on port 3001.
+
+5.) Now open insomnia and access the seeded db through http://localhost:3001/ to test out routes.
+
+
+## Built and Tested with
+    - Node
+    - Javascript
+    - MySql
+    - Insomnia
+
 
 ## Other Resources
     - Class Modules and Mini Project for Module 13
     - Google
     - MDN Webdocs
     - ChatGPT
+
 
 ## License
 MIT License
